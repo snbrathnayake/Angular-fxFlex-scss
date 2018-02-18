@@ -1,2 +1,29 @@
 <h3>{{ page }} </h3>
 <br/>
+
+<div class="main-container">
+  <div fxLayout="column" fxLayout.xs="column" fxLayoutGap="10px">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="5px" fxFlexAlign="start none">
+      <div class="set-1" fxFlex="1 6 20">logo</div>
+      <div class="set-2" fxFlex="1 6 80">{{ banner }}</div>
+    </div>
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="5px" fxFlexAlign="start start">
+      <div class="set-1" fxFlex="1 1 15%">nav</div>
+      <div class="set-2" fxFlex="2 2 65%" fxFlexOrder.xs="-1" fxLayout="column" fxLayoutGap="5px">
+        <div class="sub-2">Article 1</div>
+        <div class="sub-2" fxLayout="row" fxLayoutGap="5px" fxLayout.xs="column">
+          <div class="set-2" fxFlex="1 1 30%" fxFlexOrder.xs="1">side-A</div>
+          <div class="sub-1" fxFlex="2 2 70%">side-B</div>
+        </div>
+        <div class="sub-2">Article 3</div>
+      </div>
+      <div class="set-1" fxFlex="">aside</div>
+    </div>
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="5px" fxFlexAlign="start none">
+      <div class="set-1" fxFlex="5 2 100%">footer</div>
+    </div>
+
+  </div>
+</div>

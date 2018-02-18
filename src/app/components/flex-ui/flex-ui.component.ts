@@ -8,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class FlexUiComponent implements OnInit {
 
   page:string;
+  banner:string;
 
   constructor() { 
     this.page = 'FlexLayout-UX page';
+    this.banner = 'FlexLayout demo menagment system 2018';
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
+ 
 }

@@ -9,6 +9,13 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 export class AppComponent  {
  
   title = 'Angular fxLayout with SCSS';
+  showTitle:boolean;
 
-  constructor(){}
+  constructor(){
+    this.showTitle = false;
+  }
+
+  get isDescription(){
+    return this.showTitle;
+  }
 }

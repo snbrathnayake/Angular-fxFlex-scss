@@ -10,7 +10,7 @@ import { FlexUiComponent } from './components/flex-ui/flex-ui.component';
 import { StyleSassComponent } from './components/style-sass/style-sass.component';
 
 export const routes: Routes = [
-  { path: '',redirectTo:'home' ,pathMatch: 'full' },
+  { path: '',redirectTo:'flex-ui' ,pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'flex-ui', component: FlexUiComponent },
   { path: 'stylesheet-sass', component: StyleSassComponent },

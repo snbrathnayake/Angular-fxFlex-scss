@@ -3,10 +3,11 @@
 </h2>
 <hr>
 
-<div class="outlet">
-  <router-outlet></router-outlet>
+<div *ngIf="isDescription">
+  <br/>
+  <p>These Layout demos are curated from the Angular Material v1.x documentation, GitHub Issues, StackOverflow, and CodePen.</p>
 </div>
 
-<div>
-  <p>Angular 5 Update in future..!</p>
+<div class="outlet">
+  <router-outlet></router-outlet>
 </div>

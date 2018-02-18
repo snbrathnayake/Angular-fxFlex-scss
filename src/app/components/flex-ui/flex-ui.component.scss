@@ -1,0 +1,59 @@
+// variables for sass
+$background-color-1:#3949ab;
+$background-color-2:#009688;
+$background-color-sub-1:#44b86b;
+$background-color-sub-2:#5bb9dc;
+$font-stack:Helvetica,sans-serif;
+$div-pad: 20% / 5;
+$div-pad-sub: 10% / 2;
+
+
+
+@mixin div-block($type) {
+  padding: $div-pad;
+  color: #ffffff;
+  font: {
+    font-family: $font-stack;
+    size: 20px;
+    weight: 500;
+  }
+  @if($type=='div1') {
+    background: $background-color-1;
+  }
+  @else {
+    background: $background-color-2;
+  }
+}
+
+@mixin div-block-sub($type) {
+  padding: $div-pad-sub;
+  color: #ffffff;
+  margin: 0px;
+  font: {
+    font-family: $font-stack;
+    size: 10px;
+    weight: 200;
+  }
+  @if ($type=='sub1') {
+    background: $background-color-sub-1;
+  }
+  @else {
+    background: $background-color-sub-2;
+  }
+}
+
+div>.set-2 {
+  @include div-block('div2');
+}
+
+div>.set-1 {
+  @include div-block('div1');
+}
+
+div>.sub-1 {
+  @include div-block-sub('sub1');
+}
+
+div>.sub-2 {
+  @include div-block-sub('sub2');
+}

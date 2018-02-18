@@ -13,7 +13,7 @@ export class StyleSassComponent implements OnInit {
     this.page = 'Sass Stylesheet page';
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+
 
 }
