@@ -1,13 +1,16 @@
-<h2 class="head">
-  {{ title }}
-</h2>
-<hr>
-
-<div *ngIf="isDescription">
-  <br/>
-  <p>These Layout demos are curated from the Angular Material v1.x documentation, GitHub Issues, StackOverflow, and CodePen.</p>
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="0px" fxFlexAlign="none">
+  <div fxFlex="0 0 80%">
+    <h2 class="head">{{ title }}</h2>
+  </div>
+  <div fxFlex="0 0 20%">
+    <section class="nav-path">
+      <a [routerLink]="['/flex-ui']" routerLinkActive="active">Flex Layout</a>
+      <a [routerLink]="['/stylesheet-sass']" routerLinkActive="active">SASS</a>
+      <a [routerLink]="['/poc']" routerLinkActive="active">POC</a>
+    </section>
+  </div>
 </div>
-
+<hr>
 <div class="outlet">
   <router-outlet></router-outlet>
 </div>

@@ -1,0 +1,12 @@
+<div class="main-sec">
+  <div class="nav-sec">
+    <app-nav [logged]="username"></app-nav>
+  </div>
+  <div class="body-sec">
+    <app-landing-page (doActiveNextButton)="receiveAction($event)"></app-landing-page>
+  </div>
+  <div class="footer-sec">
+    <app-footer [isNextdisabled]="show"></app-footer>
+  </div>
+
+</div>

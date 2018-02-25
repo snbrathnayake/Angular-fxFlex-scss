@@ -1,0 +1,13 @@
+<div fxLayout="row" fxLayout.xs="column" fxFlexAlign="center center">
+  <div fxFlex="0 0 25%">
+    <a href="https://support.google.com/?hl=en" target="_blank">Google Support</a>
+  </div>
+  <div fxFlex="0 0 50%">
+    <div fxLayout="row" fxLayout.xs="column" style="justify-content: center;">
+        <button type="button" class="btn btn-default btn-lg" (click)="navigate('back')">Cancel</button>&nbsp;
+        <button type="button" class="btn btn-default btn-lg" [disabled]="isNextdisabled" (click)="navigate('next')">Next</button>
+    </div>
+
+  </div>
+  <div class="" fxFlex="0 0 25%">empty space</div>
+</div>

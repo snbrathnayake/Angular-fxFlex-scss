@@ -1,12 +1,6 @@
-// variables for sass
-$background-color-1:#3949ab;
-$background-color-2:#009688;
-$background-color-sub-1:#44b86b;
-$background-color-sub-2:#5bb9dc;
-$font-stack:Helvetica,sans-serif;
-$div-pad: 20% / 5;
-$div-pad-sub: 10% / 2;
 
+// importing globle variables
+@import '~app/scss/vars';
 
 
 @mixin div-block($type) {

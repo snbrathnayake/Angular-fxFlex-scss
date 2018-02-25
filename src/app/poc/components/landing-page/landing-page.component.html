@@ -1,0 +1,20 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px" fxLayout.xs="column">
+  <div fxFlex="0 0 auto">
+    <div class="logo">
+      <img src="../../../../assets/images/logo.png">
+    </div>
+  </div>
+  <div fxFlex="0 0 auto">
+    <div>
+      <h4>Get started with Bootstrap, the world’s most popular framework for building responsive.</h4>
+    </div>
+  </div>
+  <div fxFlex="0 0 auto">
+    <div>
+      <input type="password" class="form-control"  [(ngModel)]="password" required />
+    </div>
+  </div>
+  <div fxFlex="0 0 auto">
+    <button class="btn btn-danger setup-btn" (click)="setupEnv()">Setup Environment </button>
+  </div>
+</div>

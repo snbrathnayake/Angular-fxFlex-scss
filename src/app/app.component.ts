@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +10,11 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 export class AppComponent  {
  
   title = 'Angular fxLayout with SCSS';
-  showTitle:boolean;
 
-  constructor(){
-    this.showTitle = false;
-  }
+  constructor(private routes:Router){}
 
-  get isDescription(){
-    return this.showTitle;
+  onPressedDemo(){
+    this.routes.navigate(['/poc']);
   }
+  
 }
